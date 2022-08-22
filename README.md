@@ -1,1 +1,3 @@
-# social-media
+Fullstack Social Media Project
+NODEJS
+REACTJS
