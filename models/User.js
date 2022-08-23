@@ -5,20 +5,20 @@ const UserSchema = new mongoose.Schema(
     username: {
       type: String,
       required: true,
-      min: 3,
-      max: 20,
+      minLength: 3,
+      maxLength: 20,
       unique: true,
     },
     email: {
       type: String,
       required: true,
-      max: 50,
+      maxLength: 50,
       unique: true,
     },
     password: {
       type: String,
       required: true,
-      min: 6,
+      minLength: 6,
     },
     profilePicture: {
       type: String,
@@ -42,15 +42,15 @@ const UserSchema = new mongoose.Schema(
     },
     desc: {
       type: String,
-      max: 50,
+      maxLength: 50,
     },
     location: {
       type: String,
-      max: 50,
+      maxLength: 50,
     },
     from: {
       type: String,
-      max: 50,
+      maxLength: 50,
     },
     relationship: {
       type: Number,

@@ -4,5 +4,6 @@ Content-Type: application/json
 
 {
     "userId": "6304a5e77556406ebcdb0af7",
-    "desc": "Hey, I'm updating the description"
+    "desc": "Hey, I'm updating the description",
+    "password": "654321qwerty"
 }
