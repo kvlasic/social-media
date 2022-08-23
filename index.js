@@ -22,17 +22,9 @@ app.use(helmet());
 // HTTP request logger
 app.use(morgan("common"));
 
+// ROUTES
 app.use("/api/users", userRoute);
-app.use("/api/auth", userRoute);
-
-// Routes
-app.get("/", (req, res) => {
-  res.send("Welcome to the homepage");
-});
-
-app.get("/users", (req, res) => {
-  res.send("Welcome to the user page");
-});
+app.use("/api/auth", authRoute);
 
 // Start the server on port 8800
 app.listen(8800, () => {

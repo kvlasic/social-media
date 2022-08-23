@@ -1,0 +1,8 @@
+// Update user
+PUT http://localhost:8800/api/users/6304a5e77556406ebcdb0af7
+Content-Type: application/json
+
+{
+    "userId": "6304a5e77556406ebcdb0af7",
+    "desc": "Hey, I'm updating the description"
+}
