@@ -1,9 +1,34 @@
 // Update user
-PUT http://localhost:8800/api/users/6304a5e77556406ebcdb0af7
+PUT http://localhost:8800/api/users/630697fdb51681dbe2cca4f3
 Content-Type: application/json
 
 {
-    "userId": "6304a5e77556406ebcdb0af7",
+    "userId": "630697fdb51681dbe2cca4f3",
     "desc": "Hey, I'm updating the description",
-    "password": "654321qwerty"
+    "password": "123456"
+}
+
+###
+
+// Delete user
+DELETE http://localhost:8800/api/users/6306922e58366b3bb1507bd7
+Content-Type: application/json
+
+{
+    "userId": "6306922e58366b3bb1507bd7"
+}
+
+###
+
+// Find user
+GET http://localhost:8800/api/users/630697fdb51681dbe2cca4f3
+
+###
+
+// Follow user
+PUT http://localhost:8800/api/users/630698e3fdcf4c91fa235257/follow
+Content-Type: application/json
+
+{
+    "userId": "630697fdb51681dbe2cca4f3"
 }
