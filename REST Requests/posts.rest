@@ -1,0 +1,52 @@
+// Create post
+POST http://localhost:8800/api/posts
+Content-Type: application/json
+
+{
+    "userId": "630697fdb51681dbe2cca4f3",
+    "desc": "This is second post from John",
+    "img": "image.png"
+}
+
+###
+// Update post
+PUT http://localhost:8800/api/posts/6307b81f869c8b6a2e57ddd6
+Content-Type: application/json
+
+{
+    "userId": "630697fdb51681dbe2cca4f31",
+    "desc": "This is updated post from John"
+}
+
+###
+// Delete post
+DELETE http://localhost:8800/api/posts/6307b86a869c8b6a2e57ddd8
+Content-Type: application/json
+
+{
+    "userId": "630698e3fdcf4c91fa235257"
+}
+
+###
+// Like/dislike post
+PUT http://localhost:8800/api/posts/6307bd4683bab96f04fe9252/like
+Content-Type: application/json
+
+{
+    "userId": "630698e3fdcf4c91fa235257"
+}
+
+###
+// Get post
+GET http://localhost:8800/api/posts/6307bd4683bab96f04fe9252
+Content-Type: application/json
+
+
+###
+// Get timeline post
+GET http://localhost:8800/api/posts/timeline/all
+Content-Type: application/json
+
+{
+    "userId": "630697fdb51681dbe2cca4f3"
+}
