@@ -32,7 +32,7 @@ router.post("/login", async (req, res) => {
   });
   try {
     if (user && (await bcrypt.compare(req.body.password, user.password))) {
-      // Avoid returning password to user
+      // Don't return password, isAdmin to user
       const { password, isAdmin, ...otherProperties } = user._doc;
       res.status(200).json(otherProperties);
     } else {

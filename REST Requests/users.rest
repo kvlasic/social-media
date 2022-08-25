@@ -26,7 +26,7 @@ GET http://localhost:8800/api/users/630697fdb51681dbe2cca4f3
 ###
 
 // Follow user
-PUT http://localhost:8800/api/users/630698e3fdcf4c91fa235257/follow
+PUT http://localhost:8800/api/users/630698e3fdcf4c91fa235257/unfollow
 Content-Type: application/json
 
 {
